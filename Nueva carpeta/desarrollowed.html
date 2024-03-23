@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Google</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image:url(2560-x-1600-Wallpaper-HD.jpg)  ;
+           
+        }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+        }
+        .google-logo {
+            margin: 0 auto;
+            width: 400px;
+            height: 130px;
+            background-image: url(Google_2015_logo.svg.png);
+            background-size: cover;
+        }
+        .search-form {
+            margin-top: 20px;
+            display: flex;
+        }
+        .search-input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px 0 0 10px;
+            font-size: 16px;
+            width: 700px;
+        }
+        .buscar-button {
+            padding: 10px 20px;
+            background-color: #2fbdff;
+            color: #fff;
+            border: none;
+            border-radius: 0 10px 10px 0;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        h2 {
+            position: absolute;
+            top: 10px;
+            left: 95%;
+            color: #fff;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Gmail</h2>
+    
+    <div class="container">
+        <div class="google-logo"></div>
+        <form action="https://www.google.com/search"  method="GET" class="search-form">
+            <input type="text" name="q" class="search-input" placeholder="Buscar en Google">
+            <button type="submit" class="buscar-button">Buscar</button>
+        </form>
+    </div>
+     
+</body>
+</html>
+
+
